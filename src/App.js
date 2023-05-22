@@ -24,9 +24,15 @@ function App() {
     },
   ];
 
+  const addExpenseHandler=(expense)=>
+  {
+    console.log(expense)
+    expenses.push(expense)
+  }
+
   return (
     <div>
-      <NewExpense></NewExpense>
+      <NewExpense onSubmitExpenseForm={addExpenseHandler}></NewExpense>
       <Expenses expenses={expenses}></Expenses>
     </div>
   );
