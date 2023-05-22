@@ -27,7 +27,6 @@ function App() {
   return (
     <div>
       <NewExpense></NewExpense>
-      console.log('Mrinal')
       <Expenses expenses={expenses}></Expenses>
     </div>
   );
